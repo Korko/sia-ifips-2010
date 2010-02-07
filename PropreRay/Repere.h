@@ -23,9 +23,6 @@ class Repere {
         void rotation_Y(float theta);
         void rotation_Z(float theta);
 
-
-
-
 };
 
 #endif	/* _REPERE_H */
