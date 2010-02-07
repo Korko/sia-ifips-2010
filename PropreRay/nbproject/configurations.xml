@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Couleur.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Matrice4D.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Point4D.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Vecteur4D.h</itemPath>
@@ -15,6 +16,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Couleur.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Matrice4D.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Point4D.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Vecteur4D.cpp</itemPath>
