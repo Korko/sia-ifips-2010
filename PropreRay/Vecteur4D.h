@@ -1,6 +1,8 @@
 #ifndef _VECTEUR4D_H
 #define	_VECTEUR4D_H
 
+class Point4D;
+
 class Vecteur4D {
     private:
         float valeurs[4];
@@ -8,6 +10,7 @@ class Vecteur4D {
     public:
         Vecteur4D();
         Vecteur4D(float n_x, float n_y, float n_z);
+        Vecteur4D(Point4D debut, Point4D fin);
         Vecteur4D(const Vecteur4D& orig);
         virtual ~Vecteur4D();
 

@@ -3,6 +3,8 @@
 #include <iostream>
 #include <math.h>
 
+#include "Point4D.h"
+
 Vecteur4D::Vecteur4D(){
     valeurs[0] = 0;
     valeurs[1] = 0;
@@ -16,6 +18,13 @@ Vecteur4D::Vecteur4D(float n_x, float n_y, float n_z){
     valeurs[2] = (n_z);
     valeurs[3] = (0);
 };
+
+Vecteur4D::Vecteur4D(Point4D debut, Point4D fin){
+    valeurs[0] = debut.get(0)-fin.get(0);
+    valeurs[1] = debut.get(1)-fin.get(1);
+    valeurs[2] = debut.get(2)-fin.get(2);
+    valeurs[3] = (0);
+}
 
 Vecteur4D::Vecteur4D(const Vecteur4D& orig) {
     valeurs[0] = orig.get(0);

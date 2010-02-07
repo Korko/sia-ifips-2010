@@ -13,8 +13,8 @@ class Point4D {
         Point4D(const Point4D& orig);
         virtual ~Point4D();
 
-        inline float get(const int i)const;
-        inline void set(const int i, const float n_valeur);
+        float get(const int i)const;
+        void set(const int i, const float n_valeur);
 
         Vecteur4D operator-(const Point4D& p_b);
 

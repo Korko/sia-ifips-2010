@@ -32,6 +32,8 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o \
+	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Couleur.o \
+	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Rayon.o \
 	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Point4D.o \
 	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Matrice4D.o \
 	${OBJECTDIR}/main.o
@@ -64,6 +66,16 @@ ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o: nbproject/Make
 	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o /home/paul/Bureau/Projets/PropreRay/Vecteur4D.cpp
+
+${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Couleur.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Couleur.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Couleur.o /home/paul/Bureau/Projets/PropreRay/Couleur.cpp
+
+${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Rayon.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Rayon.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Rayon.o /home/paul/Bureau/Projets/PropreRay/Rayon.cpp
 
 ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Point4D.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Point4D.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay

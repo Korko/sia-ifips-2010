@@ -28,11 +28,11 @@ Point4D::Point4D(const Point4D& orig) {
 Point4D::~Point4D() {
 }
 
-inline float Point4D::get(const int i)const{
+float Point4D::get(const int i)const{
     return valeurs[i];
 }
 
-inline void Point4D::set(const int i, const float n_valeur){
+void Point4D::set(const int i, const float n_valeur){
     valeurs[i] = n_valeur;
 }
 
