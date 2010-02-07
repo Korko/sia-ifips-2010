@@ -31,6 +31,9 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o \
+	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Point4D.o \
+	${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Matrice4D.o \
 	${OBJECTDIR}/main.o
 
 # C Compiler Flags
@@ -56,6 +59,21 @@ LDLIBSOPTIONS=
 dist/Debug/GNU-Linux-x86/propreray: ${OBJECTFILES}
 	${MKDIR} -p dist/Debug/GNU-Linux-x86
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/propreray ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Vecteur4D.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Vecteur4D.o /home/paul/Bureau/Projets/PropreRay/Vecteur4D.cpp
+
+${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Point4D.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Point4D.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Point4D.o /home/paul/Bureau/Projets/PropreRay/Point4D.cpp
+
+${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Matrice4D.o: nbproject/Makefile-${CND_CONF}.mk /home/paul/Bureau/Projets/PropreRay/Matrice4D.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/home/paul/Bureau/Projets/PropreRay/Matrice4D.o /home/paul/Bureau/Projets/PropreRay/Matrice4D.cpp
 
 ${OBJECTDIR}/main.o: nbproject/Makefile-${CND_CONF}.mk main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
