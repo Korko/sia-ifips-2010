@@ -3,8 +3,7 @@
 
 #include "Couleur.h"
 #include "Intersection.h"
-
-class Rayon;
+#include "Rayon.h"
 
 class Objet {
     private:
@@ -16,8 +15,10 @@ class Objet {
         Objet(Couleur n_couleur);
         Objet(const Objet& orig);
         virtual ~Objet();
+
+        Intersection get_intersection()const;
         
-        virtual bool a_intersection(Rayon rayon) = 0;
+        virtual bool a_intersection(Rayon rayon){return false;};
 
 };
 #endif	/* _OBJET_H */

@@ -5,6 +5,8 @@
 #include "Matrice4D.h"
 #include "Image.h"
 
+Observateur::Observateur(){}
+
 Observateur::Observateur(Point4D oeil, Point4D cible, float new_angle_vue, Image& image)
             :position_oeil(oeil), position_cible(cible), angle_vue(new_angle_vue){
     Vecteur4D v1;

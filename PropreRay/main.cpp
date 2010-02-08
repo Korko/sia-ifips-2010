@@ -10,16 +10,26 @@
 #include "Point4D.h"
 #include "Vecteur4D.h"
 #include "Matrice4D.h"
+#include "Scene.h"
+#include "Sphere.h"
 
 /*
  *
  */
 int main(int argc, char** argv) {
-    Vecteur4D v_1(1,2,3);
-    Vecteur4D v_2(4,5,6);
-    Vecteur4D v_3(7,8,9);
-    Matrice4D m_1(v_1,v_2,v_3);
-    m_1.print_console();
+    Image image(1024, 768, (char*)"Image de Stéphanie");
+    Couleur couleur_fond(0,0,0);
+    Point4D oeil(6,2,6);
+    Point4D cible(0,0,0);
+    Observateur observateur(oeil, cible, 45, image);
+    Scene scene(observateur, image, couleur_fond);
+    Point4D origine_bille(0,0,0);
+    Couleur couleur_bille(255,0,0);
+    Sphere bille(origine_bille, 2, couleur_bille);
+    scene.ajout_objet(bille);
+    scene.moteur_graphique();
+    image.save_to_ppm();
+
     return (EXIT_SUCCESS);
 }
 

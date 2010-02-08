@@ -15,3 +15,7 @@ Objet::Objet(const Objet& orig) {
 Objet::~Objet() {
 }
 
+Intersection Objet::get_intersection()const{
+    return intersection;
+}
+
