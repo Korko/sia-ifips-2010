@@ -13,6 +13,10 @@ Scene::Scene(const Scene& orig) {
 Scene::~Scene() {
 }
 
+Image Scene::get_image()const{
+    return image;
+}
+
 void Scene::moteur_graphique(){
     for(int i = 0; i < image.get_np(); i++)
         for(int j= 0; j < image.get_nl(); j++){

@@ -18,7 +18,7 @@
  */
 int main(int argc, char** argv) {
     Image image(1024, 768, (char*)"Image de Stéphanie");
-    Couleur couleur_fond(0,0,0);
+    Couleur couleur_fond(255,0,255);
     Point4D oeil(6,2,6);
     Point4D cible(0,0,0);
     Observateur observateur(oeil, cible, 45, image);
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     Sphere bille(origine_bille, 2, couleur_bille);
     scene.ajout_objet(bille);
     scene.moteur_graphique();
-    image.save_to_ppm();
+    scene.get_image().save_to_ppm();
 
     return (EXIT_SUCCESS);
 }

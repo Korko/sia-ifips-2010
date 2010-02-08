@@ -21,6 +21,8 @@ class Scene {
         Scene(const Scene& orig);
         virtual ~Scene();
 
+        Image get_image()const;
+
         void moteur_graphique();
         void ajout_objet(const Objet n_objet);
 };
