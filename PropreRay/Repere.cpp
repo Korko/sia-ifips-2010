@@ -18,6 +18,10 @@ Matrice4D Repere::get_matrice() const{
     return matrice;
 }
 
+void Repere::set_matrice(const Matrice4D n_matrice){
+    matrice = n_matrice;
+}
+
 void Repere::translater(const Vecteur4D translation){
 	Matrice4D a;
 	a.identite_to_translation(translation);

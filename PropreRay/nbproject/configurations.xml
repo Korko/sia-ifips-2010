@@ -5,9 +5,11 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Couleur.h</itemPath>
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Image.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Intersection.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Matrice4D.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Objet.h</itemPath>
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Observateur.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Point4D.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Rayon.h</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Repere.h</itemPath>
@@ -21,9 +23,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Couleur.cpp</itemPath>
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Image.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Intersection.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Matrice4D.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Objet.cpp</itemPath>
+      <itemPath>/home/paul/Bureau/Projets/PropreRay/Observateur.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Point4D.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Rayon.cpp</itemPath>
       <itemPath>/home/paul/Bureau/Projets/PropreRay/Repere.cpp</itemPath>

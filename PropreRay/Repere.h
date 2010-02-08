@@ -17,6 +17,7 @@ class Repere {
         virtual ~Repere();
 
         Matrice4D get_matrice()const;
+        void set_matrice(const Matrice4D n_matrice);
 
         void translater(const Vecteur4D tranlation);
         void rotation_X(float theta);
