@@ -19,14 +19,16 @@
 int main(int argc, char** argv) {
     Image image(1024, 768, (char*)"Image de tests");
     Couleur couleur_fond(255,0,255);
-    Point4D oeil(6,2,6);
+    //Point4D oeil(6,2,6);
+    int resolution = 1000;
+    Point4D oeil(10*resolution,0,0);
     Point4D cible(0,0,0);
     Observateur observateur(oeil, cible, 45, image);
     Scene scene(observateur, image, couleur_fond);
     Point4D origine_bille(0,0,0);
     Couleur couleur_bille(255,0,0);
-    Sphere bille(origine_bille, 2, couleur_bille);
-    scene.ajout_objet(bille);
+    Sphere bille(origine_bille, 2*resolution, couleur_bille);
+    scene.ajout_objet(&bille);
     scene.moteur_graphique();
     scene.get_image().save_to_ppm();
 

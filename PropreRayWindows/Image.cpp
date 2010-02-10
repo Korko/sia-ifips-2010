@@ -27,7 +27,14 @@ Image::Image(const Image& orig) {
     nl = orig.get_nl();
     filename = orig.get_filename();
     pic = (unsigned char*)calloc(nl * np * 3, sizeof(unsigned char));
-    memccpy(pic, orig.get_pic(), nl * np * 3, sizeof(unsigned char));
+    // Je ne sais pas pourquoi le memcpy ne fonctionne pas
+    //memccpy(pic, orig.get_pic(), nl * np * 3, sizeof(unsigned char));
+    for(int i = 0; i < np; i++)
+        for(int j= 0; j < nl; j++){
+            pic[i*3 + j*np*3]  = orig.get_pic()[i*3 + j*np*3];
+            pic[i*3 + j*np*3 + 1] = orig.get_pic()[i*3 + j*np*3 + 1];
+            pic[i*3 + j*np*3 + 2]  = orig.get_pic()[i*3 + j*np*3 + 2];
+        }
 }
 
 Image::~Image() {

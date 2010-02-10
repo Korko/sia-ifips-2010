@@ -7,8 +7,7 @@ Scene::Scene(Observateur n_obs, Image n_image, Couleur n_coul_fond)
         :obs(n_obs), coul_fond(n_coul_fond), nombre_objet(0), image(n_image){
 }
 
-Scene::Scene(const Scene& orig) {
-}
+//Scene::Scene(const Scene& orig) {}
 
 Scene::~Scene() {
 }
@@ -26,14 +25,13 @@ void Scene::moteur_graphique(){
             Rayon rayon(obs.get_position_oeil(), vecteur);
             Intersection intersection(coul_fond);
 
-            for(std::list<Objet>::iterator it = liste_objet.begin();
-                     it != liste_objet.end() ; ++it){
+            for(int k = 0; k <nombre_objet; k++){
             //faire appliquer la fontion a_intersection pour sphere
-                if(it->a_intersection(rayon)){
+                if(liste_p_objet[k]->a_intersection(rayon)){
                 //std::cout << intersection.get_t() << std::endl;
-                    if(it->get_intersection().get_distance()
+                    if(liste_p_objet[k]->get_intersection().get_distance()
                                                 < intersection.get_distance())
-			intersection = it->get_intersection();
+			intersection = liste_p_objet[k]->get_intersection();
 		}
             }
             //en déduire la couleur du pixel
@@ -41,7 +39,8 @@ void Scene::moteur_graphique(){
         }
 };
 
-void Scene::ajout_objet(const Objet n_objet){
-    liste_objet.push_back(n_objet);
+void Scene::ajout_objet(Objet* n_p_objet){
+    liste_p_objet[nombre_objet] = n_p_objet;
+    nombre_objet++;
 }
 

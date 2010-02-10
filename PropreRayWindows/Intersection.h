@@ -16,7 +16,7 @@ class Intersection {
         Intersection();
         Intersection(Couleur couleur);
         Intersection(Couleur couleur, float n_distance);
-        Intersection(const Intersection& orig);
+        //Intersection(const Intersection& orig);
         virtual ~Intersection();
 
         float get_distance()const;

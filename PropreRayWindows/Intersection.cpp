@@ -13,8 +13,7 @@ Intersection::Intersection(Couleur n_couleur, float n_distance):
                  couleur(n_couleur), distance(n_distance), contact(), normale(){
 }
 
-Intersection::Intersection(const Intersection& orig){
-}
+//Intersection::Intersection(const Intersection& orig){}
 
 Intersection::~Intersection() {
 }

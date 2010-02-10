@@ -31,9 +31,8 @@ bool Sphere::a_intersection(Rayon rayon){
                                 (rayon.get_origine().get(1) - centre.get(1))) +
                 ((rayon.get_origine().get(2) - centre.get(2)) *
                                 (rayon.get_origine().get(2) - centre.get(2)));
-    float t0 = (-B - sqrt(B*B -4*C)) / 2;
-    float t1 = (-B + sqrt(B*B -4*C)) / 2;
-    std::cout<< rayon.get_origine().get(0) << std::endl;
+    float t0 = (-B - sqrt(B*B -4*C)) / (float)2;
+    float t1 = (-B + sqrt(B*B -4*C)) / (float)2;
     if((t0 <= 0)&&(t1 <= 0))
         return false;
     if( t0 = t1)

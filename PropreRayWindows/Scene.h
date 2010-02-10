@@ -12,6 +12,7 @@ class Scene {
 	Observateur obs;
         // Pb stdlib
 	//std::list<Objet> liste_objet;
+        Objet* liste_p_objet[10];
 	int nombre_objet;
 	Image image;
 	Couleur coul_fond;
@@ -19,13 +20,13 @@ class Scene {
     public:
         Scene();
         Scene(Observateur n_obs, Image n_image, Couleur n_coul_fond);
-        Scene(const Scene& orig);
+        //Scene(const Scene& orig);
         virtual ~Scene();
 
         Image get_image()const;
 
         void moteur_graphique();
-        void ajout_objet(const Objet n_objet);
+        void ajout_objet(Objet* n_p_objet);
 };
 
 #endif	/* _SCENE_H */

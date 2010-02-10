@@ -16,7 +16,7 @@ class Objet {
         //Objet(const Objet& orig);
         virtual ~Objet();
 
-        virtual Intersection get_intersection()const = 0;
+        Intersection get_intersection()const{return intersection;};
         
         virtual bool a_intersection(Rayon rayon) = 0;
 
