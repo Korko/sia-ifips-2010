@@ -36,7 +36,7 @@ void Point4D::set(const int i, const float n_valeur){
     valeurs[i] = n_valeur;
 }
 
-inline void Point4D::print_console()const{
+void Point4D::print_console()const{
     for(int i = 0; i<4; i++)
         std::cout<<valeurs[i]<<std::endl;
 };

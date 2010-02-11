@@ -12,7 +12,7 @@ class Sphere :public Objet{
         Sphere();
         Sphere(Point4D n_centre, float n_taille);
         Sphere(Point4D n_centre, float n_taille, Couleur couleur);
-        Sphere(const Sphere& orig);
+        //Sphere(const Sphere& orig);
         virtual ~Sphere();
 
         bool a_intersection(Rayon rayon);

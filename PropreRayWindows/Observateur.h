@@ -20,7 +20,7 @@ class Observateur {
     public:
         Observateur();
         Observateur(Point4D oeil, Point4D cible, float new_angle_vue, Image& image);
-        Observateur(const Observateur& orig);
+        //Observateur(const Observateur& orig);
         ~Observateur();
 
 	Point4D get_position_oeil()const;

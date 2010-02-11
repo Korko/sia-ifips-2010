@@ -18,7 +18,7 @@ class Point4D {
 
         Vecteur4D operator-(const Point4D& p_b);
 
-        inline void print_console()const;
+        void print_console()const;
 
 };
 

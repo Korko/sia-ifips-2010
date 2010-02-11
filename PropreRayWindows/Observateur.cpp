@@ -29,8 +29,7 @@ Observateur::Observateur(Point4D oeil, Point4D cible, float new_angle_vue, Image
     focale = ((float)image.get_np())/(2.f * tan(((angle_vue/180.f)*M_PI)/2.f));
 }
 
-Observateur::Observateur(const Observateur& orig) {
-}
+//Observateur::Observateur(const Observateur& orig) {}
 
 Observateur::~Observateur() {
 }

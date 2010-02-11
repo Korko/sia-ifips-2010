@@ -10,7 +10,7 @@
 class Scene {
     private:
 	Observateur obs;
-        // Pb stdlib
+        // Pb stdlib/polymorphisme
 	//std::list<Objet> liste_objet;
         Objet* liste_p_objet[10];
 	int nombre_objet;
